@@ -1,0 +1,28 @@
+<div class="container content-center">
+  <div class="row">
+    <div *ngFor="let product of products; let productId = index" class="col-sm">
+      <div class="card m-2" style="width: 18rem">
+        <img
+          src="placeholder.png"
+          class="card-img-top"
+          alt="なんで表示されないの〜〜"
+          style="width: 300px; height: 250px"
+        />
+        <div class="card-body">
+          <a class="card-title">{{product.name}}</a>
+          <p class="card-text">
+            {{product.price}}
+            {{product.description}}
+          </p>
+          <a
+            routerLink={{productId}}
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            >Go somewhere</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<router-outlet />
