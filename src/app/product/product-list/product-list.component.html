@@ -3,7 +3,7 @@
     <div *ngFor="let product of products; let productId = index" class="col-sm">
       <div class="card m-2" style="width: 18rem">
         <img
-          src="placeholder.png"
+          src="{{ product.coverImage }}"
           class="card-img-top"
           alt="なんで表示されないの〜〜"
           style="width: 300px; height: 250px"
