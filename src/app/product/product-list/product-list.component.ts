@@ -3,7 +3,6 @@ import { RouterLink } from '@angular/router';
 import { RouterLinkActive } from '@angular/router';
 import { RouterOutlet } from '@angular/router';
 import { NgFor } from '@angular/common';
-import { Product } from '../../products';
 import { ProductService } from '../shared/products.service';
 @Component({
   selector: 'app-product-list',
@@ -14,6 +13,6 @@ import { ProductService } from '../shared/products.service';
 export class ProductListComponent {
   products:any;
   constructor(private productService: ProductService){
-    this.products = this.productService.getProducts();
+    this.products  = productService.getProducts();
   }
 }
