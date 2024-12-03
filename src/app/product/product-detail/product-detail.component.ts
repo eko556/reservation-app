@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Product } from '../../products';
 import { products } from '../../products';
 import { ProductService } from '../shared/products.service';
 
@@ -14,11 +13,16 @@ export class ProductDetailComponent {
   product: any = products;
   constructor(private route: ActivatedRoute,
     private productService: ProductService) {}
-
   ngOnInit() {
     this.route.paramMap.subscribe((params) => {
-      // this.product = products[+params.get('productId')!];
-      this.product = this.productService.getProductById(+params.get('productId')!);
+      // this.product = this.productService.getProductById(params.get('productId')!);
+      const productObservable = this.productService.getProductById(params.get('productId')!);
+      productObservable.subscribe(
+        (data) => {
+          this.product = data;
+        },
+        (err) => {}
+      )
     });
   }
 }
