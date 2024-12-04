@@ -43,4 +43,4 @@ testem.log
 Thumbs.db
 
 /server/config/dev.js
-/sercer/config/prod.js
+/server/config/prod.js
