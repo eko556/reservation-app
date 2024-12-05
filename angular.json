@@ -33,7 +33,10 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app/assets/sass/paper-kit.scss",
+              "src/app/assets/css/demo.css",
+              "src/app/assets/css/nucleo-icons.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
@@ -95,7 +98,10 @@
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.scss"
+              "src/styles.scss",
+              "src/app/assets/sass/paper-kit.scss",
+              "src/app/assets/css/demo.css",
+              "src/app/assets/css/nucleo-icons.css"
             ],
             "scripts": [
               "node_modules/bootstrap/dist/js/bootstrap.min.js"
