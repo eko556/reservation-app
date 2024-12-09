@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { products } from '../../products';
 import { ProductService } from '../shared/products.service';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-product-detail',
-  imports: [],
+  imports: [NgStyle],
   templateUrl: './product-detail.component.html',
   styleUrl: './product-detail.component.scss',
 })
